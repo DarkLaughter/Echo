@@ -1,8 +1,6 @@
 const express = require('express');
-const socketio = require('socket.io');
 const http = require('http');
-
-
+const socketio = require('socket.io');
 
 const PORT= process.env.PORT || 5000;
 
@@ -19,11 +17,6 @@ io.on('connection', (socket) => {
     socket.on('join', ({ name, room}, callback ) => {
         console.log( name, room)
 
-        const error = true;
-
-        if (error) {
-            callback({error:'error'})
-        }
 
         callback();
     })
