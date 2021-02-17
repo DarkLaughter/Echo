@@ -1,12 +1,12 @@
 .textContainer {
-    display: flex;
     color: white;
     height: 20%;
+    width: 300px;
+    display: flex;
   }
   
   .activeContainer {
     display: flex;
-    margin-bottom: 10%;
   }
   
   .activeItem {
@@ -15,10 +15,10 @@
   }
   
   .activeContainer img {
-    padding-left: 10px;
+    padding-right: 20px;
   }
   
-  .textContainer h1 {
+  .textContainer h2 {
     margin-bottom: 0px;
   }
   
