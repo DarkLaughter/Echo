@@ -19,7 +19,7 @@ const io = socketio(server, {
 io.on('connection', (socket) => {
 
     socket.on('join', ({ name, room}, callback ) => {
-        console.log('user has joined')
+        // console.log('user has joined')
         const { error, user } = addUser({ id: socket.id, name, room});
 
         if(error) return callback(error);

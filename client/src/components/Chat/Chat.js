@@ -13,7 +13,7 @@ let socket;
 const Chat = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
-    const [users, setUsers] = useState('')
+    const [users, setUsers] = useState([])
     const [message, setMessage] = useState('')  
     const [messages, setMessages] = useState([])    
     const ENDPOINT = 'localhost:5000'
@@ -58,9 +58,9 @@ const Chat = ({ location }) => {
     return (
         <div className="outerContainer">
             <div className="container">
-            <Infobar room={room} />
-            <Messages messages={messages} name={name}/>
-            <Input message={message} sendMessage={sendMessage} setMessage={setMessage} />
+                <Infobar room={room} />
+                <Messages messages={messages} name={name}/>
+                <Input message={message} sendMessage={sendMessage} setMessage={setMessage} />
             </div>
             <TextContainer users={users} />
         </div>
