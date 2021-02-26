@@ -1,3 +1,8 @@
-Echo is a chat app creates in React
+This app is and repository is 2 parts.
 
-More to come =)
+The Client Side is built using React JS.
+It uses React Emoji, Socket IO and React Router to manage the rooms.
+
+The Server side uses the following NPM packages 
+Cors, Express, Nodemon and Socket IO to enable multiple user in real time
+
