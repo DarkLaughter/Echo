@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Infobar from '../Infobar/Infobar'
 import Input from '../Input/Input'
 import Messages from '../Messages/Messages'
-import TextContainer from '../TextContainer/TextContainer' 
+// import TextContainer from '../TextContainer/TextContainer' 
 
 import queryString from 'query-string'
 import io from 'socket.io-client';
@@ -62,7 +62,7 @@ const Chat = ({ location }) => {
                 <Messages className="scroll" messages={messages} name={name}/>
                 <Input message={message} sendMessage={sendMessage} setMessage={setMessage} />
             </div>
-            <TextContainer users={users} />
+            {/* <TextContainer users={users} /> */}
         </div>
     )
 }
